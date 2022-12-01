@@ -26,7 +26,7 @@ stage('Terraform Action') {
                 withCredentials([[
                     $class: 'AmazonWebServicesCredentialsBinding', 
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID', 
-                    credentialsId: 'AWS-Jenkins-Credentials', 
+                    credentialsId: 'AWS-EC2', 
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) 
                 {
                 sh 'terraform ${action} --auto-approve -no-color'
