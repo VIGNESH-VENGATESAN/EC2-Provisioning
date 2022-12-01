@@ -29,7 +29,7 @@ stage('Terraform Action') {
                     credentialsId: 'AWS-EC2', 
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) 
                 {
-                sh 'terraform ${action} --auto-approve -no-color'
+                sh 'terraform ${Action} --auto-approve -no-color'
                 }}}		
 }
 }
