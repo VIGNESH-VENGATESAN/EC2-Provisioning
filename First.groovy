@@ -6,7 +6,7 @@ pipeline {
 stages{
     stage('Git Checkout'){
     steps {
-        git 'https://github.com/VIGNESH-VENGATESAN/EC2-tf.git'
+        git 'https://github.com/VIGNESH-VENGATESAN/EC2-Provisioning.git'
     }
 }
 stage('Terraform Init'){
